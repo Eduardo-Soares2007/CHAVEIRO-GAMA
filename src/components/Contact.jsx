@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contact = () => {
 
-  const mapEmbedUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.8973167151053!2d-46.67914068502058!3d-23.6441618846422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce455a29777e5d%3A0x28f6e2e5c54e0a29!2sChaveiro%20Gama!5e0!3m2!1spt-BR!2sbr!4v1678888888888!5m2!1spt-BR!2sbr";
+  const mapEmbedUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.189505693463!2d-46.6772156!3d-23.6766963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce50c9b1e6f1a3%3A0x1234567890abcdef!2sChaveiro%20Gama!5e0!3m2!1spt-BR!2sBR!4v1715620000000!5m2!1spt-BR!2sBR";
 
   return (
     <section id="contact" className="section contact">
@@ -71,16 +71,16 @@ const Contact = () => {
           </div>
           
           <div className="contact-map fade-in">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.189505693463!2d-46.6772156!3d-23.6766963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce50c9b1e6f1a3%3A0x1234567890abcdef!2sChaveiro%20Gama!5e0!3m2!1spt-BR!2sBR!4v1715620000000!5m2!1spt-BR!2sBR"
-                width="600"
-                height="450"
-                style="border:0;"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-
+            <iframe 
+              src={mapEmbedUrl} 
+              width="100%" 
+              height="450" 
+              style={{ border: 0, borderRadius: 'var(--border-radius-md)' }} 
+              allowFullScreen="" 
+              loading="lazy" 
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Localização do Chaveiro Gama"
+            ></iframe>
           </div>
         </div>
       </div>
