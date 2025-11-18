@@ -71,7 +71,7 @@ const DistanceCalculator = () => {
     }
 
     // ATENÇÃO: Mude esta URL para a URL do seu servidor no deploy
-    const apiUrl = 'http://localhost:3000/calculate-distance'; 
+    const apiUrl = 'https://chaveiro-gama-server.onrender.com'; 
 
     const payload = {
       service: formData.service,
