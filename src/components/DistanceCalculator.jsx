@@ -76,7 +76,7 @@ const DistanceCalculator = () => {
     const payload = {
       service: formData.service,
       coordinates: formData.gps_coordinates,
-      
+      // antigo sistema manual de loc
       rua: '',
       numero: '',
       cep: '',
